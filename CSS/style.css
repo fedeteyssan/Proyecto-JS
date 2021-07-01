@@ -49,10 +49,13 @@ nav li:hover {
   }
 }
 
-@media only screen and (min-width: 992px) {
-  #my-carousel {
-    /*Media query: for large screens*/
-    margin-bottom: 1px;
+#my-carousel {
+  margin-bottom: 1px;
+}
+
+@media only screen and (max-width: 767px) {
+  #my-carousel img {
+    height: 100vh;
   }
 }
 

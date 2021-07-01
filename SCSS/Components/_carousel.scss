@@ -2,8 +2,12 @@
  @import '../Utilities/variables';
  
  #my-carousel{
-    @media only screen and (min-width: 992px){
-    /*Media query: for large screens*/
-       margin-bottom: 1px;
+
+   margin-bottom: 1px;
+
+   img{
+   @media only screen and (max-width: 767px){
+         height: 100vh;
+      }
    }
 }
