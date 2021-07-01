@@ -5,6 +5,7 @@
 #Donde-comprar{
     background-color: blanchedalmond;
     min-height: 100vh;
+    padding-bottom: 10px;
 
     h2{
         @include Títulos(beige);

@@ -225,6 +225,7 @@ nav li:hover {
 #Donde-comprar {
   background-color: blanchedalmond;
   min-height: 100vh;
+  padding-bottom: 10px;
 }
 
 #Donde-comprar h2 {
@@ -251,40 +252,38 @@ nav li:hover {
 }
 
 footer {
-  background-color: whitesmoke;
-  padding-top: 50px;
+  background-color: #ffffff;
   height: 100vh;
+  padding-top: 40px;
 }
 
-footer img {
-  width: 70%;
+footer .ig-cta {
+  width: 75%;
 }
 
-footer li {
-  list-style: none;
-}
-
-footer li a {
-  color: beige !important;
-  font-size: 10.28571px;
-  font-family: "Noto Sans JP", sans-serif;
-  text-decoration: none;
-}
-
-@media only screen and (min-width: 992px) {
-  footer li a {
-    /*Media query: for large screens*/
-    font-size: 22.5px;
+@media only screen and (max-width: 991px) {
+  footer .ig-cta {
+    /*Media query: for mobile and tablets*/
+    width: 100%;
   }
 }
 
-footer p {
-  color: beige;
-  font-family: "Noto Sans JP", sans-serif;
+footer .ig-gallery {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.pie-pagina {
-  height: 200px;
+@media only screen and (max-width: 991px) {
+  footer .ig-gallery img {
+    /*Media query: for mobile and tablets*/
+    width: 40%;
+  }
+}
+
+footer .footer-box {
+  height: 100%;
+  margin-top: 20px;
+  padding: 10px 0;
   background-color: darkslategray;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,30 +293,84 @@ footer p {
           align-items: center;
 }
 
-.logo-final {
-  height: 100px;
-  width: 100px;
+footer .footer-box .logo-final {
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
+  margin: 0 5%;
 }
 
-.Redes img {
-  margin: 7.5px 0;
+@media only screen and (min-width: 992px) {
+  footer .footer-box .logo-final {
+    /*Media query: for large screens*/
+    width: 100px;
+    height: 100px;
+  }
+}
+
+footer .footer-box .certificacion {
+  height: 50px;
+  width: 50px;
+  border-radius: 30%;
+}
+
+@media only screen and (min-width: 992px) {
+  footer .footer-box .certificacion {
+    /*Media query: for large screens*/
+    width: 100px;
+    height: 100px;
+  }
+}
+
+footer .footer-box li {
+  list-style: none;
+}
+
+footer .footer-box li a {
+  color: beige !important;
+  font-size: 10.28571px;
+  font-family: "Noto Sans JP", sans-serif;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 992px) {
+  footer .footer-box li a {
+    /*Media query: for large screens*/
+    font-size: 22.5px;
+  }
+}
+
+footer .footer-box p {
+  color: beige;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+footer .footer-box .Redes img {
+  margin: 2%;
   width: 25px;
   height: 25px;
   border-radius: 50%;
 }
 
-.Redes a {
+@media only screen and (min-width: 992px) {
+  footer .footer-box .Redes img {
+    /*Media query: for large screens*/
+    width: 50px;
+    height: 50px;
+  }
+}
+
+footer .footer-box .Redes a {
   text-decoration: none;
 }
 
-.Redes p {
+footer .footer-box .Redes p {
   font-size: 10.28571px;
   font-family: "Noto Sans JP", sans-serif;
 }
 
 @media only screen and (min-width: 992px) {
-  .Redes p {
+  footer .footer-box .Redes p {
     /*Media query: for large screens*/
     font-size: 22.5px;
   }
