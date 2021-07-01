@@ -1,0 +1,616 @@
+@charset "UTF-8";
+.navbar-custom {
+  background-color: #ffb11f;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+nav li a {
+  color: #f5f5dc !important;
+}
+
+nav li:hover {
+  background-color: #e0bf93 !important;
+}
+
+@media only screen and (max-width: 992px) {
+  /* Media query: navbar becomes mobile sidebar under lg breakpoint */
+  .navbar-collapse.collapsing .navbar-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -45%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .navbar-collapse.show .navbar-nav {
+    position: fixed;
+    top: 55px;
+    bottom: 0;
+    left: 0;
+    padding-left: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    width: 45% !important;
+    background-color: orange;
+    -webkit-transition: left 0.35s ease;
+    transition: left 0.35s ease;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    z-index: 10;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #my-carousel {
+    /*Media query: for large screens*/
+    margin-bottom: 1px;
+  }
+}
+
+#Nosotros {
+  background-image: url("../Multimedia/Fondo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 992px) {
+  #Nosotros {
+    /*Media query: for large screens*/
+    padding: 50px 0 10px 0;
+  }
+}
+
+#Nosotros p {
+  font-size: 18px;
+  font-family: "Patrick Hand", cursive;
+  color: #2f4f4f;
+  background-color: #f5f5dc;
+  opacity: 0.8;
+  text-transform: uppercase;
+  padding: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1% 5%;
+}
+
+@media only screen and (min-width: 992px) {
+  #Nosotros p {
+    /*Media query: for large screens*/
+    font-size: 27px;
+    padding: 25px;
+  }
+}
+
+#Nosotros video {
+  width: 90%;
+}
+
+@media only screen and (min-width: 992px) {
+  #Nosotros video {
+    /*Media query: for large screens*/
+    width: 70%;
+  }
+}
+
+#Productos {
+  min-height: 100vh;
+}
+
+#Productos h2 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  color: beige;
+  text-align: center;
+  text-transform: uppercase;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 10px 2.5px 10px;
+  letter-spacing: 2px;
+  margin-top: 60px;
+  background-color: orange;
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 992px) {
+  #Productos h2 {
+    /*Media query: for large screens*/
+    font-size: 25.2px;
+  }
+}
+
+#Productos div {
+  /*Div containing the 4 procuct divs*/
+  width: 100%;
+  padding: 10px 0;
+}
+
+@media only screen and (min-width: 992px) {
+  #Productos div {
+    /*Media query: for large screens*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 50px 0;
+  }
+}
+
+#Productos div div {
+  /*Each product divs containing img, p and button*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+  #Productos div div {
+    /*Media query: for large screens*/
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  #Productos div div:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+#Productos div div img {
+  height: 250px;
+}
+
+#Productos div div p {
+  color: green;
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px;
+}
+
+#Productos div div button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 30px;
+  font-size: 0.7em;
+  padding: 10px;
+  font-family: "Noto Sans JP", sans-serif;
+  border-color: #ffffff;
+}
+
+#Productos div div button a {
+  color: #f5f5dc;
+  text-decoration: none;
+}
+
+.card-clásica button {
+  background-color: #634c4c;
+}
+
+.card-gourmet button {
+  background-color: #c06728;
+}
+
+.card-diabla button {
+  background-color: darkred;
+}
+
+.card-turca button {
+  background-color: olive;
+}
+
+#Donde-comprar {
+  background-color: blanchedalmond;
+  min-height: 100vh;
+}
+
+#Donde-comprar h2 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  color: beige;
+  text-align: center;
+  text-transform: uppercase;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 10px 2.5px 10px;
+  letter-spacing: 2px;
+  margin-top: 60px;
+  background-color: orange;
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 992px) {
+  #Donde-comprar h2 {
+    /*Media query: for large screens*/
+    font-size: 25.2px;
+  }
+}
+
+footer {
+  background-color: whitesmoke;
+}
+
+footer img {
+  width: 70%;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer li a {
+  color: beige !important;
+  font-size: 10.28571px;
+  font-family: "Noto Sans JP", sans-serif;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 992px) {
+  footer li a {
+    /*Media query: for large screens*/
+    font-size: 22.5px;
+  }
+}
+
+footer p {
+  color: beige;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.pie-pagina {
+  height: 200px;
+  background-color: darkslategray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-final {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.Redes img {
+  margin: 7.5px 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.Redes a {
+  text-decoration: none;
+}
+
+.Redes p {
+  font-size: 10.28571px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+@media only screen and (min-width: 992px) {
+  .Redes p {
+    /*Media query: for large screens*/
+    font-size: 22.5px;
+  }
+}
+
+.whatsapp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1%;
+  right: 0.5%;
+  z-index: 10;
+}
+
+.banner {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  color: beige;
+  margin: 55px 0 20px 0;
+  padding: 60px 0 20px 50px;
+}
+
+.banner-1 {
+  background-color: #806262;
+}
+
+.banner-2 {
+  background-color: #d88143;
+}
+
+.banner-3 {
+  background-color: #be0000;
+}
+
+.banner-4 {
+  background-color: #b3b300;
+}
+
+.presentacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .presentacion {
+    /*Media query: for large screens*/
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.presentacion img {
+  width: 320px;
+}
+
+@media only screen and (min-width: 992px) {
+  .presentacion img {
+    /*Media query: for large screens*/
+    width: 250px;
+    margin-left: 5px;
+  }
+}
+
+.lista-1 {
+  background-color: #634c4c;
+}
+
+.lista-2 {
+  background-color: #c06728;
+}
+
+.lista-3 {
+  background-color: darkred;
+}
+
+.lista-4 {
+  background-color: olive;
+}
+
+.lista-ingredientes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px 15px;
+}
+
+.lista-ingredientes h3 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 27px;
+  color: beige;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .lista-ingredientes h3 {
+    /*Media query: for tablet*/
+    font-size: 36px;
+  }
+}
+
+.lista-ingredientes div ul li {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  color: beige;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .lista-ingredientes div ul li {
+    /*Media query: for tablet*/
+    font-size: 27px;
+  }
+}
+
+.other-products h3 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  color: beige;
+  text-align: center;
+  text-transform: uppercase;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 10px 2.5px 10px;
+  letter-spacing: 2px;
+  margin-top: 60px;
+  background-color: orange;
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 992px) {
+  .other-products h3 {
+    /*Media query: for large screens*/
+    font-size: 25.2px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .other-products h3 {
+    /*Media query: for large screens*/
+    font-size: 27px;
+  }
+}
+
+.other-products div {
+  /*Div containing the 3 procuct divs*/
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 992px) {
+  .other-products div {
+    /*Media query: for large screens*/
+    font-size: 27px;
+  }
+}
+
+.other-products div div {
+  /*Each product divs containing img, p and button*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.other-products div div img {
+  height: 180px;
+}
+
+@media only screen and (max-width: 375px) {
+  .other-products div div img {
+    /*Media query: for S and M screens*/
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 475px) {
+  .other-products div div img {
+    /*Media query: for L screens*/
+    height: 140px;
+  }
+}
+
+.other-products div div p {
+  color: green;
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 375px) {
+  .other-products div div p {
+    /*Media query: for S and M screens*/
+    font-size: 9px;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 475px) {
+  .other-products div div p {
+    /*Media query: for L screens*/
+    font-size: 12px;
+  }
+}
+
+.other-products div div button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 30px;
+  font-size: 0.7em;
+  padding: 10px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  border-color: white;
+}
+
+@media only screen and (max-width: 375px) {
+  .other-products div div button {
+    /*Media query: for S and M screens*/
+    font-size: 9px;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 475px) {
+  .other-products div div button {
+    /*Media query: for L screens*/
+    font-size: 12px;
+  }
+}
+
+.other-products div div button a {
+  color: beige;
+  text-decoration: none;
+}
+
+.card-clásica button {
+  background-color: #634c4c;
+}
+
+.card-gourmet button {
+  background-color: #c06728;
+}
+
+.card-diabla button {
+  background-color: darkred;
+}
+
+.card-turca button {
+  background-color: olive;
+}
+/*# sourceMappingURL=style.css.map */

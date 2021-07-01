@@ -1,0 +1,221 @@
+
+@import '../Utilities/lists';
+@import '../Utilities/variables';
+@import '../Utilities/mixins';
+
+ 
+.banner{
+    font-family: $brand-font-1;
+    font-size: $font-size-std;
+    color: beige;
+    margin: 55px 0 20px 0;
+    padding: 60px 0 20px 50px;
+}
+
+.banner-1{
+    background-color: lighten(nth($colors,1),10%);
+}
+
+.banner-2{
+    background-color: lighten(nth($colors,2),10%);
+}
+
+.banner-3{
+    background-color: lighten(nth($colors,3),10%);
+}
+
+.banner-4{
+    background-color: lighten(nth($colors,4),10%);
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @media only screen and (min-width: 992px){
+        /*Media query: for large screens*/
+        flex-direction: row;
+    }
+    
+    img{
+        width: 320px;
+        
+        @media only screen and (min-width: 992px){
+            /*Media query: for large screens*/
+            width: 250px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.lista-1{
+    background-color: nth($colors,1 );
+}
+
+.lista-2{
+    background-color: nth($colors,2 );
+}
+
+.lista-3{
+    background-color: nth($colors,3 );
+}
+
+.lista-4{
+    background-color: nth($colors,4 );
+}
+ 
+.lista-ingredientes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding:10px 15px;
+   
+
+    h3{
+        font-family: $brand-font-1;
+        font-size: $font-size-std*1.5;
+        color: beige;
+        @media only screen and (min-width: 768px) and (max-width: 992px){
+            /*Media query: for tablet*/
+            font-size: $font-size-std*2;
+        }
+    }
+
+    div{
+        ul{
+            li{
+                font-family: $brand-font-1;
+                font-size: $font-size-std;
+                color: beige;
+                
+                @media only screen and (min-width: 768px) and (max-width: 991px){
+                    /*Media query: for tablet*/
+                    font-size: $font-size-std*1.5;
+                }
+               
+            }
+        
+        }
+    }   
+}
+
+.other-products{
+
+    h3{
+        @include Títulos(beige);
+
+        @media only screen and (min-width: 992px){
+            /*Media query: for large screens*/
+            font-size: $font-size-std*1.5;
+        }
+    }
+
+    div{
+        /*Div containing the 3 procuct divs*/
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        @media only screen and (min-width: 992px){
+            /*Media query: for large screens*/
+            font-size: $font-size-std*1.5;
+        }
+
+        div{
+            /*Each product divs containing img, p and button*/
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all 1s ease;
+
+            img{
+            height: 180px;
+            @media only screen and (max-width: 375px){
+                /*Media query: for S and M screens*/
+                height: 100px;
+            }
+            @media only screen and (min-width: 376px) and (max-width:475px){
+                /*Media query: for L screens*/
+                height: 140px;
+            }
+
+            }
+
+            p{
+            color: green;
+            font-family: $brand-font-1;   
+            font-style: italic;
+            font-size: $font-size-std;
+            text-align: center;
+            margin: 10px;
+            @media only screen and (max-width: 375px){
+                /*Media query: for S and M screens*/
+                font-size: $font-size-std/2;
+            }
+
+            @media only screen and (min-width: 376px) and (max-width:475px){
+                /*Media query: for L screens*/
+                font-size: $font-size-std/1.5;
+            }
+
+            }
+
+            button{
+            width: fit-content;
+            border-radius: 30px;
+            font-size: 0.7em;
+            padding: 10px;
+            font-family: $brand-font-1;
+            font-size: $font-size-std;
+            border-color: white;
+
+            @media only screen and (max-width: 375px){
+                /*Media query: for S and M screens*/
+                font-size: $font-size-std/2;
+            }
+
+            @media only screen and (min-width: 376px) and (max-width:475px){
+                /*Media query: for L screens*/
+                font-size: $font-size-std/1.5;
+            }
+          
+            a{
+            color: beige;
+            text-decoration: none;
+            }
+            }
+        }
+    }
+}
+
+.card-clásica{
+ button{
+    background-color: nth($colors,1);
+}
+}
+
+.card-gourmet{
+ button{
+    background-color: nth($colors,2);
+}
+}
+
+.card-diabla{
+ button{
+    background-color: nth($colors,3);
+}
+}
+
+.card-turca{
+ button{
+    background-color: nth($colors,4);
+}
+}
+ 

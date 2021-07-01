@@ -1,0 +1,46 @@
+
+@import '../Utilities/mixins';
+@import '../Utilities/variables';
+
+#Nosotros{
+    background-image:url("../Multimedia/Fondo.png");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    min-height: 100vh;
+
+    @media only screen and (min-width: 992px){
+        /*Media query: for large screens*/
+        padding: 50px 0 10px 0;
+    }
+
+    p{
+        font-size: $font-size-std;
+        font-family: $brand-font-2;
+        color: #2f4f4f;
+        background-color: #f5f5dc;
+        opacity: 0.8;
+        text-transform: uppercase;
+        padding: 10px;
+        height: fit-content;
+        width: fit-content;
+        margin: 1% 5%;
+
+        @media only screen and (min-width: 992px){
+        /*Media query: for large screens*/
+            font-size: $font-size-std*1.5;
+            padding: 25px;
+        }
+    }
+
+    video{
+        width:90%;
+
+        @media only screen and (min-width: 992px){
+            /*Media query: for large screens*/
+                width: 70%;
+        }
+    }
+}
+
+

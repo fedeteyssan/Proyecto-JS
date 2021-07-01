@@ -1,0 +1,96 @@
+
+@import '../Utilities/mixins';
+@import '../Utilities/lists';
+@import '../Utilities/variables';
+
+#Productos{
+
+   min-height: 100vh;
+
+   h2{
+      @include Títulos(beige);
+   }
+   
+   
+   div{
+      /*Div containing the 4 procuct divs*/
+      width: 100%;
+      padding: 10px 0;
+     
+      @media only screen and (min-width: 992px){
+         /*Media query: for large screens*/
+         display: flex;
+         flex-direction: row;
+         padding: 50px 0;
+         
+      }
+      
+      div{
+         /*Each product divs containing img, p and button*/
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+         @media only screen and (min-width: 992px){
+            /*Media query: for large screens*/
+            transition: all 1s ease;
+
+            &:hover{
+            transform: scale(1.2);
+            }
+         }
+
+         img{
+            height: 250px;
+         }
+
+         p{
+            color: green;
+            font-family: $brand-font-1;   
+            font-style: italic;
+            font-size: $font-size-std;
+            text-align: center;
+            margin: 10px;
+         }
+
+         button{
+            width: fit-content;
+            border-radius: 30px;
+            font-size: 0.7em;
+            padding: 10px;
+            font-family: $brand-font-1;
+            border-color: #ffffff;
+        
+            a{
+               color: #f5f5dc;
+               text-decoration: none;
+            }
+         }
+      }
+   }
+}
+
+.card-clásica{
+   button{
+      background-color: nth($colors,1);
+  }
+}
+
+.card-gourmet{
+   button{
+      background-color: nth($colors,2);
+  }
+}
+
+.card-diabla{
+   button{
+      background-color: nth($colors,3);
+  }
+}
+
+.card-turca{
+   button{
+      background-color: nth($colors,4);
+  }
+}
+ 

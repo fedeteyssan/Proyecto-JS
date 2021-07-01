@@ -1,0 +1,67 @@
+@import '../Utilities/variables';
+
+footer{   
+    background-color: whitesmoke;
+
+    img{
+        width: 70%;
+    }
+
+    li{
+        list-style: none;
+
+        a{
+            color: beige !important;
+            font-size: $font-size-std/1.75;
+            font-family:$brand-font-1;
+            text-decoration: none;
+
+            @media only screen and (min-width: 992px){
+                /*Media query: for large screens*/
+                font-size: $font-size-std*1.25;
+            }
+        }
+    }
+    
+    p{
+        color: beige;
+        font-family:$brand-font-1;
+    }
+}
+ 
+.pie-pagina{
+    height: 200px;
+    background-color: darkslategray;
+    display: flex;
+    align-items: center;
+}
+ 
+ 
+.logo-final{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+ 
+
+.Redes{
+    img{
+        margin:7.5px 0; 
+        width:25px;
+        height: 25px;
+        border-radius: 50% ;
+    }
+    a{
+        text-decoration: none;
+    }
+    p{
+        font-size: $font-size-std/1.75;
+        font-family:$brand-font-1;
+
+        @media only screen and (min-width: 992px){
+            /*Media query: for large screens*/
+            font-size: $font-size-std*1.25;
+        }
+    
+    }
+}

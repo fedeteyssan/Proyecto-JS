@@ -1,0 +1,9 @@
+
+ @import '../Utilities/variables';
+ 
+ #my-carousel{
+    @media only screen and (min-width: 992px){
+    /*Media query: for large screens*/
+       margin-bottom: 1px;
+   }
+}

@@ -1,0 +1,52 @@
+
+@import '../Utilities/lists';
+
+.navbar-custom{
+    background-color: #ffb11f;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+} 
+
+nav{
+    li{
+        a{
+            color: #f5f5dc !important;
+        }
+
+        &:hover{
+            background-color:rgb(224, 191, 147) !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px){
+    /* Media query: navbar becomes mobile sidebar under lg breakpoint */
+
+    .navbar-collapse.collapsing .navbar-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -45%;
+        transition: all 0.2s ease;
+    }
+    
+    .navbar-collapse.show .navbar-nav {
+        position: fixed;
+        top: 55px;
+        bottom: 0;
+        left: 0;
+        padding-left: 10px;
+        flex-direction: column;
+        height: auto;
+        width: 45% !important;
+        background-color: orange;
+        transition: left 0.35s ease;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        z-index: 10;
+    }
+}

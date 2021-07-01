@@ -1,0 +1,28 @@
+
+@import '../Utilities/variables';
+
+@mixin Títulos($color) {
+    font-family: $brand-font-1;
+    font-size: $font-size-std;
+    color:$color;
+    text-align: center;
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 0px 10px 2.5px 10px;
+    letter-spacing: 2px;
+    margin-top: 60px;
+    background-color: orange;
+    border-radius: 15px;
+
+    @media only screen and (min-width: 992px){
+        /*Media query: for large screens*/
+            font-size: $font-size-std*1.4;
+        }
+}
+
+@mixin flexbox($flex-direction) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: $flex-direction;
+}

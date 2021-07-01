@@ -1,0 +1,12 @@
+
+@import '../Utilities/mixins';
+@import '../Utilities/variables';
+
+#Donde-comprar{
+    background-color: blanchedalmond;
+    min-height: 100vh;
+
+    h2{
+        @include Títulos(beige);
+    }
+}
