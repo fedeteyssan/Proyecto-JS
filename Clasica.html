@@ -62,15 +62,13 @@
       </h1>
     </div>
         
-    <!--Lista de ingredientes + imagenes-->
+    <!--Product introduction-->
     <div class="container-fluid presentacion w-100">
-      <div>
-        <img src="Multimedia/clasica1.png" alt="Medallón de poroto rojo con cebolla caramelizada en pan integral" title="Wica clásica">
-      </div>
 
+      <!--Ingredients-->
       <div class=" lista-ingredientes lista-1">
         <h3>Ingredientes</h3>
-    
+  
         <div>
           <ul>
             <li>Porotos colorados</li>
@@ -84,15 +82,28 @@
         </div>
       </div>
 
-      <div>
-        <img src="Multimedia/clasica2.png" alt="Medallón de poroto rojo con cebolla caramelizada en bowl" title="Wica clásica">
+      <!--Product package-->
+      <img src="Multimedia/Clasica.png" alt="">
+
+      <!--Images Gallery-->
+      <div class="d-flex">
+        <div class="small-img">
+          <img src="Multimedia/clasica1.png" alt="Medallón de poroto rojo con cebolla caramelizada en pan integral" title="Wica clásica" onclick="myFunction(this)">
+          <img src="Multimedia/clasica2.png" alt="Medallón de poroto rojo con cebolla caramelizada en bowl" title="Wica clásica" onclick="myFunction(this)">
+          <img src="Multimedia/clasica3.png" alt="Medallón de poroto rojo con cebolla caramelizada en pan de hamburguesa" title="Wica clásica" onclick="myFunction(this)">
+        </div>
+
+        <div class="img-container">
+          <img id="imageBox" src="Multimedia/clasica1.png" alt="Medallón de poroto rojo con cebolla caramelizada en pan integral" title="Wica clásica">
+        </div>
       </div>
 
-      <div>
-        <img src="Multimedia/clasica3.png" alt="Medallón de poroto rojo con cebolla caramelizada en pan de hamburguesa" title="Wica clásica">
-      </div>
-
-
+      <script>
+        function myFunction(smallImg){
+          var fullImg = document.getElementById("imageBox");
+          fullImg.src = smallImg.src;
+        }
+      </script>
     </div>
 
 

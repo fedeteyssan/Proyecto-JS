@@ -31,22 +31,67 @@
 .presentacion{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 20px;
 
     @media only screen and (min-width: 992px){
-        /*Media query: for large screens*/
-        flex-direction: row;
+    flex-direction: row;
     }
-    
+
     img{
-        width: 320px;
-        
+        height: 250px;
+
+        @media only screen and (min-width: 768px) and (max-width: 991px){
+            height: 300px;
+        }
+
         @media only screen and (min-width: 992px){
-            /*Media query: for large screens*/
-            width: 250px;
-            margin-left: 5px;
+            height: 400px;
+        }
+    }
+}
+
+
+.small-img img {
+
+    height: 65px;
+    width: 65px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+    opacity: 0.6;
+
+    &:hover{
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px){
+        height: 130px;
+        width: 130px;
+    }
+
+    @media only screen and (min-width: 992px){
+        height: 150px;
+        width: 150px;
+    }
+}
+
+.img-container{
+
+    padding: 10px;
+
+    img{
+        height: 215px;
+        width: 215px;
+
+        @media only screen and (min-width: 768px) and (max-width: 991px){
+            height: 410px;
+            width: 410px;
+        }
+
+        @media only screen and (min-width: 992px){
+            height: 470px;
+            width: 470px;
         }
     }
 }

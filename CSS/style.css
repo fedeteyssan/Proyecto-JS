@@ -273,9 +273,16 @@ footer .ig-gallery {
       flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
   footer .ig-gallery img {
-    /*Media query: for mobile and tablets*/
+    /*Media query: for mobile*/
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer .ig-gallery a {
+    /*Media query: for mobile*/
     width: 40%;
   }
 }
@@ -418,18 +425,16 @@ footer .footer-box .Redes p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 992px) {
   .presentacion {
-    /*Media query: for large screens*/
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -438,14 +443,68 @@ footer .footer-box .Redes p {
 }
 
 .presentacion img {
-  width: 320px;
+  height: 250px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .presentacion img {
+    height: 300px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   .presentacion img {
-    /*Media query: for large screens*/
-    width: 250px;
-    margin-left: 5px;
+    height: 400px;
+  }
+}
+
+.small-img img {
+  height: 65px;
+  width: 65px;
+  margin: 10px 0;
+  cursor: pointer;
+  display: block;
+  opacity: 0.6;
+}
+
+.small-img img:hover {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .small-img img {
+    height: 130px;
+    width: 130px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .small-img img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+.img-container {
+  padding: 10px;
+}
+
+.img-container img {
+  height: 215px;
+  width: 215px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .img-container img {
+    height: 410px;
+    width: 410px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .img-container img {
+    height: 470px;
+    width: 470px;
   }
 }
 
