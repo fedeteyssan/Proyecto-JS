@@ -69,11 +69,11 @@ nav li:hover {
 }
 
 #Nosotros p {
-  font-size: 18px;
-  font-family: "Patrick Hand", cursive;
-  color: #2f4f4f;
-  background-color: #f5f5dc;
-  opacity: 0.8;
+  font-size: 9px;
+  font-family: "Tenor Sans", sans-serif;
+  color: #ffffff;
+  background-color: #ff9935;
+  opacity: 0.9;
   text-transform: uppercase;
   padding: 10px;
   height: -webkit-fit-content;
@@ -88,8 +88,15 @@ nav li:hover {
 @media only screen and (min-width: 992px) {
   #Nosotros p {
     /*Media query: for large screens*/
-    font-size: 27px;
+    font-size: 21.6px;
     padding: 25px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #Nosotros p span {
+    /*Media query: for large screens*/
+    font-size: 18px;
   }
 }
 
@@ -100,7 +107,7 @@ nav li:hover {
 @media only screen and (min-width: 992px) {
   #Nosotros video {
     /*Media query: for large screens*/
-    width: 70%;
+    width: 50%;
   }
 }
 

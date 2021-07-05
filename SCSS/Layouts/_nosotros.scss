@@ -12,11 +12,11 @@
     
 
     p{
-        font-size: $font-size-std;
+        font-size: $font-size-std/2;
         font-family: $brand-font-2;
-        color: #2f4f4f;
-        background-color: #f5f5dc;
-        opacity: 0.8;
+        color: #ffffff;
+        background-color: #ff9935;
+        opacity: 0.9;
         text-transform: uppercase;
         padding: 10px;
         height: fit-content;
@@ -25,8 +25,16 @@
 
         @media only screen and (min-width: 992px){
         /*Media query: for large screens*/
-            font-size: $font-size-std*1.5;
+            font-size: $font-size-std*1.2;
             padding: 25px;
+        }
+
+        span{
+
+            @media only screen and (min-width: 992px){
+                /*Media query: for large screens*/
+                 font-size: $font-size-std*1;
+            }
         }
     }
 
@@ -35,7 +43,7 @@
 
         @media only screen and (min-width: 992px){
             /*Media query: for large screens*/
-                width: 70%;
+                width: 50%;
         }
     }
 }
