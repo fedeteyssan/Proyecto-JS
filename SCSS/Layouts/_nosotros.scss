@@ -17,7 +17,6 @@
         color: #ffffff;
         background-color: #ff9935;
         opacity: 0.9;
-        text-transform: uppercase;
         padding: 10px;
         height: fit-content;
         width: fit-content;
@@ -25,7 +24,7 @@
 
         @media only screen and (min-width: 992px){
         /*Media query: for large screens*/
-            font-size: $font-size-std*1.2;
+            font-size: $font-size-std*1.4;
             padding: 25px;
         }
 
@@ -33,7 +32,7 @@
 
             @media only screen and (min-width: 992px){
                 /*Media query: for large screens*/
-                 font-size: $font-size-std*1;
+                 font-size: $font-size-std*1.2;
             }
         }
     }

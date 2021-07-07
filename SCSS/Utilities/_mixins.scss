@@ -20,9 +20,3 @@
         }
 }
 
-@mixin flexbox($flex-direction) {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: $flex-direction;
-}
