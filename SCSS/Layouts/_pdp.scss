@@ -8,8 +8,13 @@
     font-family: $brand-font-1;
     font-size: $font-size-std;
     color: beige;
-    margin: 55px 0 20px 0;
-    padding: 30px 0 20px 50px;
+    margin: 55px 0 5px 0;
+    padding: 10px 0 5px 50px;
+
+    @media only screen and (min-width: 992px){
+        margin: 55px 0 10px 0;
+        padding: 20px 0 10px 50px;
+    }
 }
 
 .banner-1{
@@ -31,135 +36,122 @@
 .presentacion{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 
     @media only screen and (min-width: 992px){
     flex-direction: row;
     }
 
-    img{
-        height: 250px;
 
-        @media only screen and (min-width: 768px) and (max-width: 991px){
-            height: 300px;
-        }
+    .small-img img {
+        height: 70px;
+        width: 70px;
+        margin: 10px 0px 10px 10px;
+        cursor: pointer;
+        display: block;
+        opacity: 0.6;
 
-        @media only screen and (min-width: 992px){
-            height: 400px;
-        }
-    }
-}
-
-
-.small-img img {
-
-    height: 70px;
-    width: 70px;
-    margin: 10px 0;
-    cursor: pointer;
-    display: block;
-    opacity: 0.6;
-
-    &:hover{
+        &:hover{
         opacity: 1;
-    }
-
-    @media only screen and (min-width: 768px) and (max-width: 991px){
-        height: 110px;
-        width: 110px;
-    }
-
-    @media only screen and (min-width: 992px){
-        height: 110px;
-        width: 110px;
-    }
-}
-
-.img-container{
-
-    padding: 10px;
-
-    @media only screen and (min-width: 992px){
-        padding: 30px;
-    }
-
-
-
-    img{
-        height: 260px;
-        width: 260px;
-
-        @media only screen and (min-width: 320px) and (max-width: 374px){
-            height: 210px;
-            width: 210px;
         }
 
-
         @media only screen and (min-width: 768px) and (max-width: 991px){
-            height: 410px;
-            width: 410px;
+            height: 110px;
+            width: 110px;
         }
 
         @media only screen and (min-width: 992px){
-            height: 470px;
-            width: 470px;
-        }
-    }
-}
-
-.lista-1{
-    background-color: nth($colors,1 );
-}
-
-.lista-2{
-    background-color: nth($colors,2 );
-}
-
-.lista-3{
-    background-color: nth($colors,3 );
-}
-
-.lista-4{
-    background-color: nth($colors,4 );
-}
- 
-.lista-ingredientes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding:10px 15px;
-   
-
-    h3{
-        font-family: $brand-font-1;
-        font-size: $font-size-std*1.5;
-        color: beige;
-        @media only screen and (min-width: 768px) and (max-width: 992px){
-            /*Media query: for tablet*/
-            font-size: $font-size-std*2;
+            height: 110px;
+            width: 110px;
         }
     }
 
-    div{
-        ul{
-            li{
-                font-family: $brand-font-1;
-                font-size: $font-size-std;
-                color: beige;
-                
-                @media only screen and (min-width: 768px) and (max-width: 991px){
-                    /*Media query: for tablet*/
-                    font-size: $font-size-std*1.5;
-                }
-               
+    .img-container{
+
+        padding: 10px;
+
+        @media only screen and (min-width: 992px){
+        padding: 30px;
+        }
+
+        img{
+            height: 260px;
+            width: 260px;
+
+            @media only screen and (min-width: 320px) and (max-width: 374px){
+                height: 210px;
+                width: 210px;
             }
-        
+
+            @media only screen and (min-width: 768px) and (max-width: 991px){
+                height: 410px;
+                width: 410px;
+            }
+
+            @media only screen and (min-width: 992px){
+                height: 470px;
+                width: 470px;
+            }
         }
-    }   
+    }
+ 
+    .lista-ingredientes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        margin: 10px 30px 30px 0;
+        padding:10px 15px;
+        border:double beige;
+   
+        h3{
+            font-family: $brand-font-2;
+            font-size: $font-size-std*1;
+            color: beige;
+
+            @media only screen and (min-width: 768px) and (max-width: 991px){
+                font-size: $font-size-std*1.25;
+            }
+
+            @media only screen and (min-width: 992px){
+                font-size: $font-size-std*1.5;
+            }
+        }
+
+    
+        p{
+            font-family: $brand-font-2;
+            font-size: $font-size-std/1.25;
+            color: beige;
+                
+            @media only screen and (min-width: 768px) and (max-width: 991px){
+                font-size: $font-size-std;
+            }
+
+            @media only screen and (min-width: 992px){
+                font-size: $font-size-std;
+            }
+        }
+    }
+
+
+    .lista-1{
+        background-color: darken(nth($colors,1),5%);
+    }
+
+    .lista-2{
+        background-color: nth($colors,2 );
+    }
+
+    .lista-3{
+        background-color: nth($colors,3 );
+    }
+
+    .lista-4{
+    background-color: nth($colors,4 );
+    }
 }
 
 .other-products{
@@ -253,26 +245,26 @@
 }
 
 .card-clásica{
- button{
-    background-color: nth($colors,1);
-}
+    button{
+        background-color: nth($colors,1);
+    }
 }
 
 .card-gourmet{
- button{
-    background-color: nth($colors,2);
-}
+    button{
+        background-color: nth($colors,2);
+    }
 }
 
 .card-diabla{
- button{
-    background-color: nth($colors,3);
-}
+    button{
+        background-color: nth($colors,3);
+    }
 }
 
 .card-turca{
- button{
-    background-color: nth($colors,4);
-}
+    button{
+        background-color: nth($colors,4);
+    }
 }
  

@@ -390,8 +390,15 @@ footer .footer-box .Redes p {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 18px;
   color: beige;
-  margin: 55px 0 20px 0;
-  padding: 30px 0 20px 50px;
+  margin: 55px 0 5px 0;
+  padding: 10px 0 5px 50px;
+}
+
+@media only screen and (min-width: 992px) {
+  .banner {
+    margin: 55px 0 10px 0;
+    padding: 20px 0 10px 50px;
+  }
 }
 
 .banner-1 {
@@ -418,9 +425,9 @@ footer .footer-box .Redes p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -435,102 +442,70 @@ footer .footer-box .Redes p {
   }
 }
 
-.presentacion img {
-  height: 250px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .presentacion img {
-    height: 300px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .presentacion img {
-    height: 400px;
-  }
-}
-
-.small-img img {
+.presentacion .small-img img {
   height: 70px;
   width: 70px;
-  margin: 10px 0;
+  margin: 10px 0px 10px 10px;
   cursor: pointer;
   display: block;
   opacity: 0.6;
 }
 
-.small-img img:hover {
+.presentacion .small-img img:hover {
   opacity: 1;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .small-img img {
+  .presentacion .small-img img {
     height: 110px;
     width: 110px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .small-img img {
+  .presentacion .small-img img {
     height: 110px;
     width: 110px;
   }
 }
 
-.img-container {
+.presentacion .img-container {
   padding: 10px;
 }
 
 @media only screen and (min-width: 992px) {
-  .img-container {
+  .presentacion .img-container {
     padding: 30px;
   }
 }
 
-.img-container img {
+.presentacion .img-container img {
   height: 260px;
   width: 260px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
-  .img-container img {
+  .presentacion .img-container img {
     height: 210px;
     width: 210px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .img-container img {
+  .presentacion .img-container img {
     height: 410px;
     width: 410px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .img-container img {
+  .presentacion .img-container img {
     height: 470px;
     width: 470px;
   }
 }
 
-.lista-1 {
-  background-color: #634c4c;
-}
-
-.lista-2 {
-  background-color: #c06728;
-}
-
-.lista-3 {
-  background-color: darkred;
-}
-
-.lista-4 {
-  background-color: olive;
-}
-
-.lista-ingredientes {
+.presentacion .lista-ingredientes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,41 +513,70 @@ footer .footer-box .Redes p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 10px 30px 30px 0;
   padding: 10px 15px;
+  border: double beige;
 }
 
-.lista-ingredientes h3 {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 27px;
-  color: beige;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  .lista-ingredientes h3 {
-    /*Media query: for tablet*/
-    font-size: 36px;
-  }
-}
-
-.lista-ingredientes div ul li {
-  font-family: "Noto Sans JP", sans-serif;
+.presentacion .lista-ingredientes h3 {
+  font-family: "Tenor Sans", sans-serif;
   font-size: 18px;
   color: beige;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .lista-ingredientes div ul li {
-    /*Media query: for tablet*/
+  .presentacion .lista-ingredientes h3 {
+    font-size: 22.5px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .presentacion .lista-ingredientes h3 {
     font-size: 27px;
   }
+}
+
+.presentacion .lista-ingredientes p {
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 14.4px;
+  color: beige;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .presentacion .lista-ingredientes p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .presentacion .lista-ingredientes p {
+    font-size: 18px;
+  }
+}
+
+.presentacion .lista-1 {
+  background-color: #554141;
+}
+
+.presentacion .lista-2 {
+  background-color: #c06728;
+}
+
+.presentacion .lista-3 {
+  background-color: darkred;
+}
+
+.presentacion .lista-4 {
+  background-color: olive;
 }
 
 .other-products h3 {

@@ -63,36 +63,39 @@
             </h1>
         </div>
         
-        <!--Lista de ingredientes + imagenes-->
+        <!--Product introduction-->
         <div class="container-fluid presentacion w-100">
-            <div>
-                <img src="Multimedia/PDP Diabla.png" alt="Medallón de poroto negro con morrón rojo y verde al plato" title="Wica Diabla al plato" loading="lazy">
-            </div>
 
-            <div class=" lista-ingredientes lista-3">
-                <h3>Ingredientes</h3>
-    
-                <div>
-                    <ul>
-                        <li>Porotos negros con morrón rojo y verde</li>
-                        <li>Arroz yamani</li>
-                        <li>Harina de maiz</li>
-                        <li>Fécula de mandioca</li>
-                        <li>Mix de especias y picante suave</li>
-                        <li>Sal</li>
-                    </ul>
+            <!--Images Gallery-->
+            <div class="d-flex align-items-center">
+                <div class="small-img">
+                    <img src="Multimedia/Diabla.png" alt="Medallón de porotos negros con morrón rojo y verde" title="Wica diabla" loading="lazy" onclick="myFunction(this)">
+                    <img src="Multimedia/Diabla1.png" alt="Medallón de porotos negros con morrón rojo y verde al plato" title="Wica diabla al plato" onclick="myFunction(this)">
+                    <img src="Multimedia/Diabla2.png" alt="Medallón de porotos negros con morrón rojo y verde en pan con lechuga y tomate" title="Wica diabla en pan con lechuga y tomate" onclick="myFunction(this)">
+                    <img src="Multimedia/Diabla3.png" alt="Medallón de porotos negros con morrón rojo y verde a la pizza" title="Wica diabla a la pizza" onclick="myFunction(this)">
+                    <img src="Multimedia/Diabla4.png" alt="Medallón de porotos negros con morrón rojo y verde en una picada" title="Wica diabla en unan picada" onclick="myFunction(this)">
+                </div>
+  
+                <div class="img-container">
+                    <img id="imageBox" src="Multimedia/Diabla.png" alt="Medallón de porotos negros con morrón rojo y verde" title="Wica diabla">
                 </div>
             </div>
-
-            <div>
-                <img src="Multimedia/diabla2.png" alt="Medallón de poroto negro con morrón rojo y verde en pan de hamburguesa" title="Wica Diabla en pan de hamburguesa" loading="lazy">
+  
+            <script>
+                function myFunction(smallImg){
+                    var fullImg = document.getElementById("imageBox");
+                    fullImg.src = smallImg.src;
+                }
+            </script>
+  
+            <!--Ingredients-->
+            <div class=" lista-ingredientes lista-3">
+                <h3>Ingredientes:</h3>
+                <p>
+                    Garbanzos con tomates al romero, arroz yamani, <br> harina de maiz, fécula de mandioca, mix de especias y sal.<br>
+                    <i>Producto vegano, fuente de fibra, con ingredientes 100% naturales <br>y sin TACC, conservantes ni colorantes.</i>
+                </p>
             </div>
-
-            <div>
-                <img src="Multimedia/diabla3.png" alt="Medallón de poroto negro con morrón rojo y verde en pan de remolacha" title="Wica Diabla en pan de remolacha" loading="lazy">
-            </div>
-
-
         </div>
 
 
@@ -106,7 +109,7 @@
                     <img src="Multimedia/Clasica.png" alt="Medallón de poroto rojo con cebolla caramelizada" title="Wica Clásica" loading="lazy">
                     <p>Clásica: Poroto rojo con cebolla caramelizada</p>
                     <button>
-                    <a href="Clásica.html" target="_blank" title="Página de descripción de producto Wica Clásica">Conocé más</a>
+                    <a href="Clasica.html" target="_blank" title="Página de descripción de producto Wica Clásica">Conocé más</a>
                     </button>
                 </div>
           
@@ -153,6 +156,7 @@
                 <div class="col-4 d-flex justify-content-evenly">
                     <img src="Multimedia/Logo Wica.png" alt="Isotipo marca" title="Isotipo Somos Wica" class="logo-final" loading="lazy">
                     <img src="Multimedia/100natural.png" alt="Isotipo 100% natural" title="100% natural" class="certificacion" loading="lazy">
+                    <img src="Multimedia/Sin Tacc.png" alt="Isotipo sin TACC" title="Sin TACC" class="logo-final" loading="lazy"> 
                 </div>
   
                 <div class="col-4">

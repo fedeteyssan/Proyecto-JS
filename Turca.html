@@ -63,37 +63,39 @@
             </h1>
         </div>
         
-        <!--Lista de ingredientes + imagenes-->
+        <!--Product introduction-->
         <div class="container-fluid presentacion w-100">
-            <div>
-                <img src="Multimedia/turca1.png" alt="Medallón vegano de lenteja turca con zapallo, zanahoria y curry al plato con ensalada" title="Wica Turca con ensalada" loading="lazy">
-            </div>
 
-            <div class=" lista-ingredientes lista-4">
-                <h3>Ingredientes</h3>
-    
-                <div>
-                    <ul>
-                        <li>Lenteja turca</li>
-                        <li>Zanahoria</li>
-                        <li>Zapallo</li>
-                        <li>Harina de maiz</li>
-                        <li>Fécula de mandioca</li>
-                        <li>Curry</li>
-                        <li>Sal</li>
-                    </ul>
+            <!--Images Gallery-->
+            <div class="d-flex align-items-center">
+                <div class="small-img">
+                    <img src="Multimedia/Turca.png" alt="Medallón de lenteja turca con zanahoria y zapallo " title="Wica turca" loading="lazy" onclick="myFunction(this)">
+                    <img src="Multimedia/Turca1.png" alt="Medallón de lenteja turca con zanahoria y zapallo al plato" title="Wica turca al plato" onclick="myFunction(this)">
+                    <img src="Multimedia/Turca2.png" alt="Medallón de lenteja turca con zanahoria y zapallo a la parrilla" title="Wica turca a la parrilla" onclick="myFunction(this)">
+                    <img src="Multimedia/Turca3.png" alt="Medallón de lenteja turca con zanahoria y zapallo al plato con ensalada" title="Wica turca al plato con ensalada" onclick="myFunction(this)">
+                    <img src="Multimedia/Turca4.png" alt="Medallón de lenteja turca con zanahoria y zapallo en roll" title="Wica turca en roll" onclick="myFunction(this)">
+                </div>
+  
+                <div class="img-container">
+                    <img id="imageBox" src="Multimedia/Turca.png" alt="Medallón de lenteja turca con zanahoria y zapallo" title="Wica turca">
                 </div>
             </div>
-
-            <div>
-                <img src="Multimedia/place3.jpg" alt="Medallón vegano de lenteja turca con zapallo, zanahoria y curry" loading="lazy">
+  
+            <script>
+                function myFunction(smallImg){
+                    var fullImg = document.getElementById("imageBox");
+                    fullImg.src = smallImg.src;
+                }
+            </script>
+  
+            <!--Ingredients-->
+            <div class=" lista-ingredientes lista-4">
+                <h3>Ingredientes:</h3>
+                <p>
+                    Lenteja turca, zanahoria, zapallo, harina de <br>maiz, fécula de mandioca, curry y sal.<br>
+                    <i>Producto vegano, fuente de fibra, con ingredientes 100% naturales <br>y sin TACC, conservantes ni colorantes.</i>
+                </p>
             </div>
-
-            <div>
-                <img src="Multimedia/place2.jpg" alt="Medallón vegano de lenteja turca con zapallo, zanahoria y curry" loading="lazy">
-            </div>
-
-
         </div>
 
 
@@ -107,7 +109,7 @@
                     <img src="Multimedia/Clasica.png" alt="Medallón de poroto rojo con cebolla caramelizada" title="Wica Clásica" loading="lazy">
                     <p>Clásica: Poroto rojo con cebolla caramelizada</p>
                     <button>
-                    <a href="Clásica.html" target="_blank" title="Página de descripción de producto Wica Clásica">Conocé más</a>
+                    <a href="Clasica.html" target="_blank" title="Página de descripción de producto Wica Clásica">Conocé más</a>
                     </button>
                 </div>
           
@@ -121,7 +123,7 @@
                       
                 <div class="card-diabla">
                     <img src="Multimedia/Diabla.png" alt="Medallón de poroto negro con morrón rojo y verde" title="Wica Diabla" loading="lazy">    
-                    <p>Diabla: Poroto negro con morrón rojo y morrón verde</p>
+                    <p>Diabla: Poroto negro con morrón rojo y verde</p>
                     <button>
                       <a href="Diabla.html" target="_blank" title="Página de descripción de producto Wica Diabla">Conocé más</a>
                     </button>  
@@ -153,6 +155,7 @@
                 <div class="col-4 d-flex justify-content-evenly">
                     <img src="Multimedia/Logo Wica.png" alt="Isotipo marca" title="Isotipo Somos Wica" class="logo-final" loading="lazy">
                     <img src="Multimedia/100natural.png" alt="Isotipo 100% natural" title="100% natural" class="certificacion" loading="lazy">
+                    <img src="Multimedia/Sin Tacc.png" alt="Isotipo sin TACC" title="Sin TACC" class="logo-final" loading="lazy"> 
                 </div>
   
                 <div class="col-4">
