@@ -53,10 +53,8 @@ nav li:hover {
   margin-bottom: 1px;
 }
 
-@media only screen and (max-width: 767px) {
-  #my-carousel img {
-    height: 100vh;
-  }
+#my-carousel img {
+  height: 95vh;
 }
 
 #Nosotros {
@@ -242,6 +240,10 @@ nav li:hover {
     /*Media query: for large screens*/
     font-size: 25.2px;
   }
+}
+
+#Donde-comprar iframe {
+  width: 90%;
 }
 
 footer {
