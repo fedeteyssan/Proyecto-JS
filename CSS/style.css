@@ -60,14 +60,19 @@ nav li:hover {
 #Nosotros {
   background-image: url("../Multimedia/Fondo1.jpeg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
   padding: 50px 0 10px 0;
 }
 
+@media only screen and (min-width: 992px) {
+  #Nosotros {
+    background-attachment: fixed;
+  }
+}
+
 #Nosotros p {
-  font-size: 12px;
+  font-size: 13.84615px;
   font-family: "Tenor Sans", sans-serif;
   color: #ffffff;
   background-color: #ff9935;
@@ -84,7 +89,6 @@ nav li:hover {
 
 @media only screen and (min-width: 992px) {
   #Nosotros p {
-    /*Media query: for large screens*/
     font-size: 25.2px;
     padding: 25px;
   }
@@ -92,7 +96,6 @@ nav li:hover {
 
 @media only screen and (min-width: 992px) {
   #Nosotros p span {
-    /*Media query: for large screens*/
     font-size: 21.6px;
   }
 }

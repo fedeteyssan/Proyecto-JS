@@ -8,7 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     
+    <!-- Link CSS -->
     <link rel="stylesheet" href="CSS/style.css">
+
+    <!--Link CDN a efectos AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <title>Wica Clásica - Medallón vegano de poroto rojo con cebolla caramelizada</title>
 
@@ -88,7 +92,7 @@
       </script>
 
       <!--Ingredients-->
-      <div class=" lista-ingredientes lista-1">
+      <div class=" lista-ingredientes lista-1" data-aos="fade-left">
         <h3>Ingredientes:</h3>
         <p>
           Porotos colorados, cebolla caramelizada, arroz yamani, <br> harina de maiz, fécula de mandioca, mix de especias y sal.<br>
@@ -104,7 +108,7 @@
 
       <div class="container m-5">
         <div class="card-gourmet">
-          <img src="Multimedia/Gourmet.jpg" alt="Medallón de garbanzos con tomates al romero" title="Wica gourmet">
+          <img src="Multimedia/Gourmet.jpg" alt="Medallón de garbanzos con tomates al romero" title="Wica gourmet" loading="lazy" data-aos="flip-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
           <p>Gourmet: Garbanzos con tomates al romero</p>
           <button>
             <a href="Gourmet.html" target="_blank" title="Página de descripción de producto Wica Gourmet">Conocé más</a>
@@ -112,7 +116,7 @@
         </div>     
             
         <div class="card-diabla">
-          <img src="Multimedia/Diabla.jpg" alt="Medallón de poroto negro con morrón rojo y verde" title="Wica Diabla">    
+          <img src="Multimedia/Diabla.jpg" alt="Medallón de poroto negro con morrón rojo y verde" title="Wica Diabla" loading="lazy" data-aos="flip-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">    
           <p>Diabla: Poroto negro con morrón rojo y verde</p>
           <button>
             <a href="Diabla.html" target="_blank" title="Página de descripción de producto Wica Diabla">Conocé más</a>
@@ -120,7 +124,7 @@
         </div>
   
         <div class="card-turca">
-          <img src="Multimedia/Turca.jpg" alt="Medallón de lenteja turca con zapallo, zanahoria y curry" title="Wica Turca">    
+          <img src="Multimedia/Turca.jpg" alt="Medallón de lenteja turca con zapallo, zanahoria y curry" title="Wica Turca" loading="lazy" data-aos="flip-right" data-aos-duration="3000" data-aos-easing="ease-out-cubic">    
           <p>Turca: Lenteja turca con zapallo, zanahoria y curry</p>
           <button>
             <a href="Turca.html" target="_blank" title="Página de descripción de producto Wica Turca">Conocé más</a>
@@ -202,7 +206,15 @@
       $('.navbar-nav>li>a').on('click', function(){
           $('.navbar-collapse').collapse('hide');
       });
-  </script>
+    </script>
+
+    <!-- Script para efectos AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:1500,
+      });
+    </script>
 
   </body>
 </html>
